@@ -1,0 +1,116 @@
+[
+    {
+        "name": "Min iteration count",
+        "criterion": [
+            {
+                "name": "CCKeyDerivationPBKDF",
+                "parameter": "X6"
+            }
+        ],
+        "conditions": [
+            {
+                "type": "OK",
+                "conditionType": "ConstInt",
+                "greater": 1000
+            }
+        ]
+    },
+
+    {
+        "name": "IV-Cipher",
+        "calls" : [
+            {
+                "name": "CCCryptorCreate",
+                "parameter": "X5"
+            },
+            {
+                "name": "CCCryptorCreateWithMode",
+                "parameter": "X4"
+            },
+            {
+                "name": "CCCrypt",
+                "parameter": "X5"
+            }
+        ]
+    },
+
+    {
+        "name": "Key-Cipher",
+        "calls" : [
+            {
+                "name": "CCCryptorCreate",
+                "parameter": "X3"
+            },
+            {
+                "name": "CCCryptorCreateWithMode",
+                "parameter": "X5"
+            },
+            {
+                "name": "CCCrypt",
+                "parameter": "X3"
+            }
+        ]
+    },
+
+    {
+        "name": "OP-Cipher",
+        "calls" : [
+            {
+                "name": "CCCryptorCreate",
+                "parameter": "X0"
+            },
+            {
+                "name": "CCCryptorCreateWithMode",
+                "parameter": "X0"
+            },
+            {
+                "name": "CCCrypt",
+                "parameter": "X0"
+            }
+        ]
+    },
+
+    {
+        "name": "Option-Cipher",
+        "calls" : [
+            {
+                "name": "CCCryptorCreate",
+                "parameter": "X2"
+            }
+        ]
+    },
+
+    {
+        "name": "Mode-Cipher",
+        "calls" : [
+            {
+                "name": "CCCryptorCreateWithMode",
+                "parameter": "X1"
+            }
+        ]
+    },
+
+    {
+        "name": "SecureRandom",
+        "calls" : [
+            {
+                "name" : "arc4random",
+                "parameter": "X0"
+            },
+            {
+                "name" : "SecRandomCopyBytes",
+                "parameter": "X0"
+            }
+        ]
+    },
+
+    {
+        "name": "PBKDF",
+        "calls" : [
+            {
+                "name" : "CCKeyDerivationPBKDF",
+                "parameter": "X7"
+            }
+        ]
+    }
+]

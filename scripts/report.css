@@ -1,0 +1,18 @@
+.call-label {
+    margin-left: 10px;
+}
+.call-entry {
+    margin-left: 25px;
+}
+.border-left-small {
+    border-left: solid black 2px; margin-left: 5px;
+}
+.path-element {
+    border: solid #444 1px; margin: 2px;
+}
+.dismiss {
+    display: inline;
+}
+.hide {
+    display: none;
+}
