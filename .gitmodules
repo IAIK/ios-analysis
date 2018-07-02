@@ -1,0 +1,6 @@
+[submodule "dagger"]
+	path = dagger
+	url = https://github.com/IAIK/ios-analysis-dagger
+[submodule "llvm-slicer"]
+	path = llvm-slicer
+	url = https://github.com/IAIK/ios-analysis-llvmslicer
